@@ -1,0 +1,6 @@
+.WelcomeText {
+  display: flex;
+  font-family: 'Arial Narrow Bold';
+  margin-top: 7rem;
+  justify-content: center;
+}
