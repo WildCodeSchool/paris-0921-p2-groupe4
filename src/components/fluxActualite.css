@@ -1,0 +1,21 @@
+.flux {
+  text-align: center;
+  margin: 35px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #8467da;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.fluxbox {
+  padding: 2px;
+  border-style: solid;
+  border-color: #8467da;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.flux:hover {
+  background-color: #8467da;
+}
