@@ -10,7 +10,7 @@ export default function Pictures() {
   return (
     <>
       <div className="WelcomeText">
-        <p> Welcome to your relaxation App.Choose below what you want to see </p>
+        <p> Welcome to your relaxation App. Choose below what you want to see </p>
       </div>
       <div className="Container-pictures">
         <div className="ContainerOne">
@@ -32,7 +32,7 @@ export default function Pictures() {
             </a>
           </div>
           <div className="Pictures">
-            <a href="/TED">
+            <a href="/TedTalks">
               <img className="TED" src={TED} alt="TED" height="170px"></img>
             </a>
           </div>

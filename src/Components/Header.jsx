@@ -9,8 +9,9 @@ export default function Header() {
       <a href="/">
         <img src={Logo} className="Logo" height="70" width="auto" alt="logo-nasato" />{' '}
       </a>
-
-      <img src={Save} className="Save" height="30" alt="Save-nasato" />
+      <a href="/Favoris">
+        <img src={Save} className="Save" height="30" alt="Save-nasato" />
+      </a>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
+import './Text.css';
 
 export default function National() {
-  return <h1> National Geographic </h1>;
+  return <p> National Geographic </p>;
 }

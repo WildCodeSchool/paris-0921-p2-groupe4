@@ -1,5 +1,6 @@
 import React from 'react';
+import './Text.css';
 
 export default function Tendances() {
-  return <h1> Tendances </h1>;
+  return <p> Tendances </p>;
 }
