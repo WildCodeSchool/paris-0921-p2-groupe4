@@ -2,5 +2,6 @@
   display: flex;
   font-family: 'Arial Narrow Bold';
   margin-top: 7rem;
+  margin-bottom: 3rem;
   justify-content: center;
 }
