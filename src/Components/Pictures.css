@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   height: 60vh;
-  align-items: center;
   margin-top: 1rem;
 }
 
@@ -11,4 +10,9 @@
   width: 210px;
   height: 210px;
   border: solid #d0bbf8;
+  margin-bottom: 2rem;
+}
+
+.ContainerOne {
+  width: 5%;
 }
