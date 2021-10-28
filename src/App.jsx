@@ -1,15 +1,24 @@
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import React from 'react';
-import Text from './Components/Text';
 import Header from './Components/Header';
-import Pictures from './Components/Pictures';
+import Homepage from './Components/Homepage';
+import HappyNews from './Components/HappyNews';
+import National from './Components/National';
+import Tendances from './Components/Tendances';
+import TED from './Components/Ted';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Text />
-      <Pictures />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/HappyNews" component={HappyNews} />
+        <Route path="/National" component={National} />
+        <Route path="/Tendances" component={Tendances} />
+        <Route path="/TedTalks" component={TED} />
+      </Switch>
     </div>
   );
 }
