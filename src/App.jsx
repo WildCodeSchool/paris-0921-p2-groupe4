@@ -1,27 +1,27 @@
-import React from 'react';
-
-import logo from './logo.png';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
+import React from 'react';
+import Header from './Components/Header';
+import Homepage from './Components/Homepage';
+import HappyNews from './Components/HappyNews';
+import National from './Components/National';
+import Tendances from './Components/Tendances';
+import Ted from './Components/Ted';
+import Favoris from './Components/Favoris';
 
 function App() {
   return (
-    <main className="rsw-container">
-      <div
-        className="rsw-item"
-        style={{
-          paddingBottom: '2rem',
-        }}>
-        <img src={logo} width="20%" alt="WCS logo" />
-      </div>
-      <div className="rsw-item">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
-      </div>
-      <div className="rsw-item">
-        <p>
-          Start in the <code>App.jsx</code> component !
-        </p>
-      </div>
-    </main>
+    <div className="App">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/HappyNews" component={HappyNews} />
+        <Route path="/National" component={National} />
+        <Route path="/Tendances" component={Tendances} />
+        <Route path="/TedTalks" component={Ted} />
+        <Route path="/Favoris" component={Favoris} />
+      </Switch>
+    </div>
   );
 }
 
