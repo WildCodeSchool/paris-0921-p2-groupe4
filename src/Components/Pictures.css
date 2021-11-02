@@ -3,16 +3,20 @@
   flex-wrap: wrap;
   justify-content: space-around;
   height: 60vh;
-  margin-top: 1rem;
+  height: 90vh;
+  align-items: flex-start;
+  padding-top: 3rem;
 }
 
 .Pictures img {
   width: 210px;
   height: 210px;
-  border: solid #d0bbf8;
+  /* border: solid #d0bbf8; */
   margin-bottom: 2rem;
+  border-radius: 30%;
 }
 
 .ContainerOne {
   width: 5%;
+  margin-right: 46.7px;
 }

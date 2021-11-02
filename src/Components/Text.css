@@ -1,12 +1,8 @@
 .WelcomeText {
   display: flex;
   font-family: 'Arial Narrow Bold';
-  margin-top: 7rem;
-  margin-bottom: 3rem;
+  margin-top: 10p;
   justify-content: center;
-}
-
-.Title {
-  font-family: 'Arial Narrow Bold';
-  justify-content: center;
+  margin: 0;
+  padding: 10px;
 }

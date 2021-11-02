@@ -1,0 +1,7 @@
+.Body {
+  background-color: #ffffff;
+  display: block;
+  background-position: bottom;
+  background-image: url('../Pictures/Waves.svg');
+  background-repeat: repeat-x;
+}
