@@ -2,6 +2,12 @@
   background-color: #ffffff;
   display: block;
   background-position: bottom;
-  background-image: url('../Pictures/Waves.svg');
+  background-image: url('../Pictures/waves.svg');
   background-repeat: repeat-x;
+}
+
+@media (min-width: 800px) {
+  .Body {
+    background-image: url('../Pictures/wavesdesktop.svg');
+  }
 }
