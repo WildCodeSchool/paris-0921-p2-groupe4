@@ -11,3 +11,12 @@
     background-image: url('../Pictures/wavesdesktop.svg');
   }
 }
+
+@media (max-width: 800px) {
+  .Pictures img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+    border-radius: 30%;
+  }
+}

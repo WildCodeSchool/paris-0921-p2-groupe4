@@ -1,6 +1,23 @@
 import React from 'react';
 import './Text.css';
 
+import SwipeR from '../Pictures/swipe-right.png';
+import SwipeL from '../Pictures/swipe-left.png';
+
 export default function Tendances() {
-  return <p> Tendances </p>;
+  return (
+    <>
+      <div className="Text">
+        <p> Tendances </p>
+      </div>
+      <div className="Swipe">
+        <a href="/Happynews">
+          <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>
+        </a>
+        <a href="/National">
+          <img className="Swipe-right" src={SwipeR} alt="Swipe-right"></img>
+        </a>
+      </div>
+    </>
+  );
 }

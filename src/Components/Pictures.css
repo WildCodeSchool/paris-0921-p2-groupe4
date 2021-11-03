@@ -11,11 +11,6 @@
 .Pictures img {
   width: 210px;
   height: 210px;
-  /* border: solid #d0bbf8; */
   margin-bottom: 2rem;
   border-radius: 30%;
-}
-
-.ContainerOne {
-  width: 5%;
 }
