@@ -1,0 +1,43 @@
+.flux {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 35px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #8467da;
+  border-width: medium;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.text {
+  height: auto;
+}
+p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.lesstext {
+  height: 55px;
+  overflow: hidden;
+}
+
+.flux:hover {
+  background-color: #8467da;
+}
+
+.fluxbutton {
+  margin-top: 10px;
+  background-color: white;
+  color: #8467da;
+  font-size: 120%;
+  font-style: bold;
+  border-color: #8467da;
+  border-style: solid;
+  border-radius: 5px;
+  height: fit-content;
+  width: 17%;
+  position: relative;
+}
