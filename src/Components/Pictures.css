@@ -1,0 +1,18 @@
+.Container-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 60vh;
+  margin-top: 1rem;
+}
+
+.Pictures img {
+  width: 210px;
+  height: 210px;
+  border: solid #d0bbf8;
+  margin-bottom: 2rem;
+}
+
+.ContainerOne {
+  width: 5%;
+}
