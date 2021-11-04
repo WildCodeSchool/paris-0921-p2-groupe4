@@ -2,6 +2,9 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import Header from './Components/Header';
+// import Card //
+// import Card from './Components/Card';
+// import Card //
 import Homepage from './Components/Homepage';
 import HappyNews from './Components/HappyNews';
 import National from './Components/National';
@@ -13,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* <Card /> */}
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/HappyNews" component={HappyNews} />
