@@ -39,7 +39,7 @@ export default SingleTweet;
                     "3_1455593301390790658"
                 ]
             },
-            "author_id": "159276989"
+            "author_id": " "
         },
         {
             "text": "Free, Full Text: https://t.co/Uk56A4u8H1 Attn: @robbwolf @SustainableDish @REGENETARIANISM @ShawnBakerMD @shashiiyengar @Travis_Statham @Mangan150 @Grimhood @BenBikmanPhD @LowCarbVet @lowcarbGP @livinlowcarbman @DiscoStew66 @TuitNutrition @ProfTimNoakes @dlifein @goodnewsnetwork https://t.co/u5DcbTPm34 https://t.co/9QOvbowmb1",

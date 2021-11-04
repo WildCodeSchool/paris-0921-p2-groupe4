@@ -1,17 +1,23 @@
 import React from 'react';
 
-function MultipleTweets({ tweetDisplay }) {
-  return (
-    <div>
-      {tweetDisplay.data.map((tweet) => {
-        return (
-          <div key={tweet.id}>
-            <p> {tweet.text}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
+function MultipleTweets({ tenTweets }) {
+  {
+    tenTweets.data.map((tweet, [i]) => {
+      const tweetObject = {
+        id: tweet.id,
+        text: tweet.text,
+        url: tenTweets.includes.media[i].url,
+        user: tenTweets.includes.users[i].name,
+      };
+      return (
+        <div key={tweetObject.id}>
+          <p>{tweetObject.text}</p>
+          <img src={tweetObject.url} alt="tweetimg" />
+          <p>{tweetObject.user}</p>
+        </div>
+      );
+    });
+  }
 }
 
 export default MultipleTweets;

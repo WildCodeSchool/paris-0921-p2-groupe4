@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './content.css';
+import './contentBox.css';
 import keys from './keys.jsx';
-import SingleTweet from './singleTweetDisplay';
+import MultipleTweets from './multipleTweetDisplay';
 
 function Content() {
-  const [tweet, setTweet] = useState();
+  const [tweet, setTweet] = useState(null);
   const getTweet = () => {
     axios
       .get(
@@ -19,7 +19,7 @@ function Content() {
   return (
     <div className="tweet-result">
       <button onClick={getTweet}>COUCOU</button>
-      <SingleTweet tweets={tweet} />
+      <MultipleTweets tenTweets={tweet} />
     </div>
   );
 }
