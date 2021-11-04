@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './fluxActualite.css';
 
 function FluxA() {
