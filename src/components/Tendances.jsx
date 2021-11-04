@@ -1,19 +1,20 @@
 import React from 'react';
+import './Text.css';
 
-import SwipeR from '../Pictures/swipe-right.png';
-import SwipeL from '../Pictures/swipe-left.png';
+import SwipeR from '../pictures/swipe-right.png';
+import SwipeL from '../pictures/swipe-left.png';
 
-export default function Ted() {
+export default function Tendances() {
   return (
     <>
       <div className="Text">
-        <p> TED talks </p>
+        <p> Tendances </p>
       </div>
       <div className="Swipe">
-        <a href="/National">
+        <a href="/Happynews">
           <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>
         </a>
-        <a href="/">
+        <a href="/National">
           <img className="Swipe-right" src={SwipeR} alt="Swipe-right"></img>
         </a>
       </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './HappyNews.css';
 
-import SwipeR from '../Pictures/swipe-right.png';
-import SwipeL from '../Pictures/swipe-left.png';
+import SwipeR from '../pictures/swipe-right.png';
+import SwipeL from '../pictures/swipe-left.png';
 
 export default function HappyNews() {
   return (

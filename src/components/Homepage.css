@@ -2,13 +2,13 @@
   background-color: #ffffff;
   display: block;
   background-position: bottom;
-  background-image: url('../Pictures/waves.svg');
+  background-image: url('../pictures/waves.svg');
   background-repeat: repeat-x;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 830px) {
   .Body {
-    background-image: url('../Pictures/wavesdesktop.svg');
+    background-image: url('../pictures/wavesdesktop.svg');
   }
 }
 

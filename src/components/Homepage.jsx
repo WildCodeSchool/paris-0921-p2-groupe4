@@ -1,8 +1,8 @@
 import React from 'react';
-import Happy from '../Pictures/Happynews.png';
-import National from '../Pictures/National.png';
-import Tendances from '../Pictures/Tendances.png';
-import TED from '../Pictures/TED.png';
+import Happy from '../pictures/Happynews.png';
+import National from '../pictures/National.png';
+import Tendances from '../pictures/Tendances.png';
+import TED from '../pictures/TED.png';
 import './Pictures.css';
 import './Text.css';
 import './Homepage.css';
@@ -13,7 +13,7 @@ export default function Pictures() {
       <div className="Body">
         {
           <div className="WelcomeText">
-            <p> Welcome to Nasato. Your relaxation App. Please choose below what you want to see </p>
+            <p> Welcome to Nasato. Your relaxation App. You can choose below what you want to see </p>
           </div>
         }{' '}
         <div className="Container-pictures">

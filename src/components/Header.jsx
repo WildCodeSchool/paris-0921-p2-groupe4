@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
-import Logo from '../Pictures/logo.png';
-import Save from '../Pictures/heart.png';
+import Logo from '../pictures/logo.png';
+import Save from '../pictures/heart.png';
 
 export default function Header() {
   return (
