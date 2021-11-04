@@ -1,6 +1,7 @@
-import { Switch, Route } from 'react-router-dom';
-import './App.css';
 import React from 'react';
+import './App.css';
+import Content from './Components/Content';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Components/Header';
 // import Card //
 // import Card from './Components/Card';
@@ -11,6 +12,7 @@ import National from './Components/National';
 import Tendances from './Components/Tendances';
 import Ted from './Components/Ted';
 import Favoris from './Components/Favoris';
+import FluxActualite from './Components/FluxActualite';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path="/TedTalks" component={Ted} />
         <Route path="/Favoris" component={Favoris} />
       </Switch>
+      <FluxActualite />
+      <Content />
     </div>
   );
 }
