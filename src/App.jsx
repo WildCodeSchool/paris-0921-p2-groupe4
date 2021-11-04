@@ -1,6 +1,7 @@
-import { Switch, Route } from 'react-router-dom';
-import './App.css';
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import Content from './components/content';
 import Header from './components/Header';
 import Homepage from './components/Homepage';
 import HappyNews from './components/HappyNews';
@@ -8,6 +9,8 @@ import National from './components/National';
 import Tendances from './components/Tendances';
 import Ted from './components/Ted';
 import Favoris from './components/Favoris';
+
+import './App.css';
 
 function App() {
   return (
@@ -21,6 +24,7 @@ function App() {
         <Route path="/TedTalks" component={Ted} />
         <Route path="/Favoris" component={Favoris} />
       </Switch>
+      <Content />
     </div>
   );
 }
