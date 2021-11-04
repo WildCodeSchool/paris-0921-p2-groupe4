@@ -1,6 +1,7 @@
-import { Switch, Route } from 'react-router-dom';
-import './App.css';
 import React from 'react';
+import './App.css';
+import Content from './components/content';
+import { Switch, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Homepage from './Components/Homepage';
 import HappyNews from './Components/HappyNews';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/TedTalks" component={Ted} />
         <Route path="/Favoris" component={Favoris} />
       </Switch>
+      <Content />
     </div>
   );
 }

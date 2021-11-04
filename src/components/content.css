@@ -1,0 +1,13 @@
+.content {
+  text-align: center;
+  padding: 105px;
+  border-radius: 5px;
+  border-width: medium;
+  border-style: double;
+  border-color: #8467da;
+}
+
+.content:hover {
+  background-color: #8467da;
+  padding: 105px;
+}
