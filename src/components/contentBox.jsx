@@ -19,7 +19,7 @@ function Content() {
   return (
     <div className="tweet-result">
       <button onClick={getTweet}>COUCOU</button>
-      <MultipleTweets tenTweets={tweet} />
+      {tweet && <MultipleTweets tenTweets={tweet} />}
     </div>
   );
 }
