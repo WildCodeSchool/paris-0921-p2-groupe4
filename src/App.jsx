@@ -1,14 +1,16 @@
 import React from 'react';
-import './App.css';
-import Content from './components/content';
 import { Switch, Route } from 'react-router-dom';
-import Header from './Components/Header';
-import Homepage from './Components/Homepage';
-import HappyNews from './Components/HappyNews';
-import National from './Components/National';
-import Tendances from './Components/Tendances';
-import Ted from './Components/Ted';
-import Favoris from './Components/Favoris';
+
+import Content from './components/content';
+import Header from './components/Header';
+import Homepage from './components/Homepage';
+import HappyNews from './components/HappyNews';
+import National from './components/National';
+import Tendances from './components/Tendances';
+import Ted from './components/Ted';
+import Favoris from './components/Favoris';
+
+import './App.css';
 
 function App() {
   return (

@@ -1,8 +1,10 @@
 import React from 'react';
-import Happy from '../Pictures/Happy-news.jpg';
-import National from '../Pictures/Monkey-2.jpg';
-import Tendances from '../Pictures/Tendances.jpg';
-import TED from '../Pictures/TED.jpg';
+
+import Happy from '../pictures/Happy-news.jpg';
+import National from '../pictures/Monkey-2.jpg';
+import Tendances from '../pictures/Tendances.jpg';
+import TED from '../pictures/TED.jpg';
+
 import './Pictures.css';
 import './Text.css';
 
