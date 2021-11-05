@@ -1,6 +1,7 @@
 import React from 'react';
 import './Text.css';
 
+import Content from './content';
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
@@ -10,6 +11,7 @@ export default function Tendances() {
       <div className="Text">
         <p> Tendances </p>
       </div>
+      <Content />
       <div className="Swipe">
         <a href="/Happynews">
           <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>

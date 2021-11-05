@@ -1,6 +1,7 @@
 .flux {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
   margin: 35px;
   padding: 8px;
@@ -25,7 +26,7 @@ p {
 }
 
 .flux:hover {
-  background-color: #8467da;
+  background-color: #d0bbf8;
 }
 
 .fluxbutton {
@@ -38,6 +39,14 @@ p {
   border-style: solid;
   border-radius: 5px;
   height: fit-content;
-  width: 17%;
+  width: 100%;
   position: relative;
+}
+
+.noDisplayImg {
+  display: none;
+}
+.displayImg {
+  height: 250px;
+  width: 100%;
 }
