@@ -5,7 +5,6 @@ import keys from './keys';
 
 function TweetRequest() {
   const [tenTweets, setTenTweets] = useState([]);
-  const tweetArray = [];
 
   useEffect(() => {
     axios
@@ -15,32 +14,32 @@ function TweetRequest() {
       )
       .then((response) => response.data)
       .then((data) => {
-        data &&
-          data.data.map((tweet) => {
-            let url = null;
-            const user = data.includes.users.map((author) => {
-              author.name;
-            });
-
-            if (tweet.attachments) {
-              url = data.includes.media.find((media) => {
-                media.media_key === tweet.attachments.media_keys[0];
-              });
-            }
-
-            tweetArray.push({
-              id: tweet.id,
-              text: tweet.text,
-              url: url,
-              user: user,
-            });
-          });
+        const tweets = data.data.map((tweet) => {
+          return {
+            id: tweet.id,
+            text: tweet.text,
+            url: tweet.attachments ? data.includes.media.find((elem) => elem.media_key === tweet.attachments.media_keys[0]).url : null,
+            user: data.includes.users.find((elem) => elem.id === tweet.author_id).name,
+          };
+        });
+        setTenTweets(tweets);
       });
-
-    setTenTweets(tweetArray);
   }, []);
 
-  return <div>{tenTweets}</div>;
+  return (
+    <>
+      {tenTweets.length &&
+        tenTweets.map((tweet) => {
+          return (
+            <div key={tweet.id}>
+              <img src={tweet.url} alt="twitterimg" />
+              <p>{tweet.text}</p>
+              <p> Written by {tweet.user}</p>
+            </div>
+          );
+        })}
+    </>
+  );
 }
 
 export default TweetRequest;
