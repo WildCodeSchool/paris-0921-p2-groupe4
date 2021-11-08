@@ -3,13 +3,15 @@ import axios from 'axios';
 
 import keys from './keys';
 
-function TweetRequest() {
+function TweetRequest(tweetNumber, theme) {
   const [tenTweets, setTenTweets] = useState([]);
+  theme = '@NatGeo';
+  tweetNumber = '10';
 
   useEffect(() => {
     axios
       .get(
-        'https://cors-bypass.tkzprod.dev/api.twitter.com/2/tweets/search/recent?max_results=10&tweet.fields=lang,attachments,text&expansions=attachments.media_keys,author_id&media.fields=preview_image_url,url,media_key&user.fields=username,name&query=@goodnewsnetwork%20has%3Aimages%20lang%3Aen',
+        `https://cors-bypass.tkzprod.dev/api.twitter.com/2/tweets/search/recent?max_results=${tweetNumber}&tweet.fields=lang,attachments,text&expansions=attachments.media_keys,author_id&media.fields=preview_image_url,url,media_key&user.fields=username,name&query=${theme}%20has%3Aimages%20lang%3Aen`,
         { headers: keys },
       )
       .then((response) => response.data)
