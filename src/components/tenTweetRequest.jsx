@@ -3,11 +3,9 @@ import axios from 'axios';
 
 import keys from './keys';
 
-function TweetRequest(tweetNumber, theme) {
+function TweetRequest(props) {
   const [tenTweets, setTenTweets] = useState([]);
-  theme = '@NatGeo';
-  tweetNumber = '10';
-
+  let { tweetNumber, theme } = props;
   useEffect(() => {
     axios
       .get(
@@ -27,7 +25,6 @@ function TweetRequest(tweetNumber, theme) {
         setTenTweets(tweets);
       });
   }, []);
-
   return (
     <>
       {tenTweets.length &&

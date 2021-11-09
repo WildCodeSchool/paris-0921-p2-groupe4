@@ -7,7 +7,7 @@ import './contentBox.css';
 function ContentBox() {
   return (
     <div className="tweet-result">
-      <TweetRequest />
+      <TweetRequest tweetNumber="10" theme="@NatGeo" />
     </div>
   );
 }
