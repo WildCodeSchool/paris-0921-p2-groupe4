@@ -1,0 +1,15 @@
+.Container-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 90vh;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.Pictures img {
+  width: 210px;
+  height: 210px;
+  margin-bottom: 2rem;
+  border-radius: 30%;
+}

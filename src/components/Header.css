@@ -1,0 +1,12 @@
+.Header {
+  background-color: #f0eafe;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Save {
+  margin-right: 10px;
+}

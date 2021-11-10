@@ -1,0 +1,22 @@
+.Body {
+  background-color: #ffffff;
+  display: block;
+  background-position: bottom;
+  background-image: url('../pictures/waves.svg');
+  background-repeat: repeat-x;
+}
+
+@media (min-width: 830px) {
+  .Body {
+    background-image: url('../pictures/wavesdesktop.svg');
+  }
+}
+
+@media (max-width: 800px) {
+  .Pictures img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+    border-radius: 30%;
+  }
+}
