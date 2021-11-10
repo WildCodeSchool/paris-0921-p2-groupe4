@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  width: 60%;
   margin: 35px;
   padding: 8px;
   border-style: solid;
@@ -10,6 +11,10 @@
   border-width: medium;
   border-radius: 5px;
   text-align: justify;
+}
+.fluxbox {
+  display:flex;
+  justify-content: center;
 }
 
 .text {
