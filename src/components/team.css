@@ -1,0 +1,32 @@
+.team {
+  margin-top: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.team:hover {
+  background-color: #d0bbf8;
+}
+.column1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.column2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .column1 {
+    flex-direction: column;
+  }
+  .column2 {
+    flex-direction: column;
+  }
+}
