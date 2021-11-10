@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import FluxA from './fluxActualite';
 import keys from './keys';
 
 function TweetRequest(props) {
@@ -25,17 +26,12 @@ function TweetRequest(props) {
         setTenTweets(tweets);
       });
   }, []);
+
   return (
     <>
       {tenTweets.length &&
         tenTweets.map((tweet) => {
-          return (
-            <div key={tweet.id}>
-              <img src={tweet.url} alt="twitterimg" />
-              <p>{tweet.text}</p>
-              <p> Written by {tweet.user}</p>
-            </div>
-          );
+          return <FluxA key={tweet.id} twitterImg={tweet.url} twitterText={tweet.text} twitterAuthor={tweet.user} />;
         })}
     </>
   );
