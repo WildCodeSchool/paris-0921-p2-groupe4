@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Happy from '../pictures/Happy-news.jpg';
-import './fluxActualite.css';
+import './FluxActualite.css';
 
 function FluxA() {
   const [theButton, setButton] = React.useState(false);

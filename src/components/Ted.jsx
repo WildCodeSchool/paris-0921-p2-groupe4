@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Content from './content';
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
+import Content from './Content.jsx';
 
 export default function Ted() {
   return (

@@ -9,6 +9,7 @@ import Ted from './components/Ted';
 import Favoris from './components/Favoris';
 import Settings from './components/Settings';
 // import FluxActualite from './components/FluxActualite';
+import Apropos from './components/a-propos';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/TedTalks" component={Ted} />
         <Route path="/Favoris" component={Favoris} />
         <Route path="/Settings" component={Settings} />
+        <Route path="/Apropos" component={Apropos} />
       </Switch>
     </div>
   );

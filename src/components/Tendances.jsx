@@ -1,7 +1,7 @@
 import React from 'react';
 import './Text.css';
 
-import Content from './content';
+import Content from './Content';
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
