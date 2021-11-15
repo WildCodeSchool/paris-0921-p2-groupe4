@@ -1,7 +1,9 @@
 .flux {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
+  width: 60%;
   margin: 35px;
   padding: 8px;
   border-style: solid;
@@ -9,6 +11,10 @@
   border-width: medium;
   border-radius: 5px;
   text-align: justify;
+}
+.fluxbox {
+  display: flex;
+  justify-content: center;
 }
 
 .text {
@@ -25,7 +31,7 @@ p {
 }
 
 .flux:hover {
-  background-color: #8467da;
+  background-color: #d0bbf8;
 }
 
 .container-btn {
@@ -44,19 +50,16 @@ p {
   border-style: solid;
   border-radius: 5px;
   height: fit-content;
-  width: 17%;
+  width: 100%;
   position: relative;
 }
 
-.favouriteBtn {
-  border-color: #8467da;
-  font-size: 15px;
-  border-radius: 5px;
-  width: 25%;
+.noDisplayImg {
+  display: none;
 }
-.favouriteBtn:hover {
-  background-color: #5c45a0;
-  box-shadow: 10px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
+.displayImg {
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  width: 90%;
 }

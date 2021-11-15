@@ -1,0 +1,16 @@
+.team1 {
+  margin: 5px;
+}
+.teammember {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #8467da;
+  margin-bottom: 15px;
+}
+
+.teamname {
+  text-align: center;
+  margin: 0px;
+}
