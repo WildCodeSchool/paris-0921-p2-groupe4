@@ -8,6 +8,7 @@ import National from './components/National';
 import Tendances from './components/Tendances';
 import Ted from './components/Ted';
 import Favoris from './components/Favoris';
+import Settings from './components/Settings';
 import FluxActualite from './components/FluxActualite';
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Tendances" component={Tendances} />
         <Route path="/TedTalks" component={Ted} />
         <Route path="/Favoris" component={Favoris} />
+        <Route path="/Settings" component={Settings} />
       </Switch>
       <FluxActualite />
       <Content />

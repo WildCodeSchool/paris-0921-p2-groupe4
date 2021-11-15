@@ -28,6 +28,12 @@ p {
   background-color: #8467da;
 }
 
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .fluxbutton {
   margin-top: 10px;
   background-color: white;
@@ -40,4 +46,17 @@ p {
   height: fit-content;
   width: 17%;
   position: relative;
+}
+
+.favouriteBtn {
+  border-color: #8467da;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 25%;
+}
+.favouriteBtn:hover {
+  background-color: #5c45a0;
+  box-shadow: 10px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
