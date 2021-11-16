@@ -6,8 +6,8 @@ import keys from './keys';
 
 function TweetRequest(props) {
   const [tenTweets, setTenTweets] = useState([]);
-  let { tweetNumber, theme } = props;
-  const images = '%20has%3Aimages';
+  let { tweetNumber, theme, images } = props;
+
   useEffect(() => {
     axios
       .get(
@@ -26,7 +26,7 @@ function TweetRequest(props) {
         });
         setTenTweets(tweets);
       });
-  }, [theme, tweetNumber]);
+  }, [theme, tweetNumber, images]);
 
   return (
     <>
