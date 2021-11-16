@@ -1,9 +1,8 @@
 import React from 'react';
 
-import Happy from '../pictures/Happy-news.jpg';
 import './fluxActualite.css';
 
-function FluxA() {
+function FluxA({ twitterImg, twitterText, twitterAuthor }) {
   const [theButton, setButton] = React.useState(false);
 
   function handleClickButton() {
@@ -14,18 +13,16 @@ function FluxA() {
     <div className="fluxbox">
       <div className="flux">
         <div className={theButton ? 'displayImg' : 'noDisplayImg'}>
-          <img src={Happy} alt="happynews" className="displayImg"></img>
+          <img src={twitterImg} alt="happynews" className="displayImg"></img>
         </div>
-        <div className={theButton ? 'text' : 'lesstext'}>
-          <p>
-            Les insectes (Insecta) sont une classe animaux invertébrés de embranchement des arthropodes et du sous-embranchement des hexapodes. Ils
-            caractérisés par un corps segmenté en trois tagmes (tête possédant des pièces buccales externes, une paire de antennes et au moins paire
-            yeux composés ; thorax pourvu de trois paires de pattes.
-          </p>
-        </div>
-        <div>
+        <div className="rightColumnDisplay">
+          <div className={theButton ? 'text' : 'lesstext'}>
+            {twitterText}
+            <p> Written by {twitterAuthor} </p>
+          </div>
           <button className="fluxbutton" onClick={handleClickButton}>
-            &darr; &uarr;
+            {' '}
+            &darr; &uarr;{' '}
           </button>
         </div>
       </div>

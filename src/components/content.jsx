@@ -2,8 +2,6 @@ import React from 'react';
 
 import FluxA from './fluxActualite';
 
-import './content.css';
-
 function Content() {
   return (
     <div>
