@@ -14,7 +14,7 @@
   background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
 }
 .fluxbox {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -56,4 +56,3 @@ p {
   width: 65vw;
   margin-bottom: 4vh;
 }
-

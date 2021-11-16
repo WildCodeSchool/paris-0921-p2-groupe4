@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Happy from '../pictures/Happynews.png';
 import National from '../pictures/National.png';
 import Tendances from '../pictures/Tendances.png';
 import TED from '../pictures/TED.png';
 
-import './Pictures.css';
 import './Text.css';
 import './Homepage.css';
 
@@ -17,30 +17,34 @@ export default function Pictures() {
           <div className="WelcomeText">
             <p> Welcome to Nasato. Your relaxation App. You can choose below what you want to see </p>
           </div>
-        }{' '}
+        }
         <div className="Container-pictures">
           <div className="ContainerOne">
             <div className="Pictures">
-              <a href="/Happynews">
+              <Link to="/Happynews" className="Color" style={{ textDecoration: 'none' }}>
                 <img className="Happy" src={Happy} alt="Happy-news"></img>
-              </a>
+                <p> Happy News </p>
+              </Link>
             </div>
             <div className="Pictures">
-              <a href="/National">
+              <Link to="/National" className="Color" style={{ textDecoration: 'none' }}>
                 <img className="National" src={National} alt="National-geographic"></img>
-              </a>
+                <p> Nature </p>
+              </Link>
             </div>
           </div>
           <div className="ContainerTwo">
             <div className="Pictures">
-              <a href="/Tendances">
+              <Link to="/Tendances" className="Color" style={{ textDecoration: 'none' }}>
                 <img className="Tendances" src={Tendances} alt="Tendances"></img>
-              </a>
+                <p> Tendances </p>
+              </Link>
             </div>
             <div className="Pictures">
-              <a href="/TedTalks">
+              <Link to="/TedTalks" className="Color" style={{ textDecoration: 'none' }}>
                 <img className="TED" src={TED} alt="TED"></img>
-              </a>
+                <p> TED talks </p>
+              </Link>
             </div>
           </div>
         </div>
