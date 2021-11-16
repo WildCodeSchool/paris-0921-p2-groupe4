@@ -25,7 +25,7 @@ function TweetRequest(props) {
         });
         setTenTweets(tweets);
       });
-  }, []);
+  }, [theme, tweetNumber]);
 
   return (
     <>

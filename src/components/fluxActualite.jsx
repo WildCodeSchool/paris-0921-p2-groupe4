@@ -15,13 +15,14 @@ function FluxA({ twitterImg, twitterText, twitterAuthor }) {
         <div className={theButton ? 'displayImg' : 'noDisplayImg'}>
           <img src={twitterImg} alt="happynews" className="displayImg"></img>
         </div>
-        <div className={theButton ? 'text' : 'lesstext'}>
-          {twitterText}
-          Written by {twitterAuthor}
-        </div>
-        <div>
+        <div className="rightColumnDisplay">
+          <div className={theButton ? 'text' : 'lesstext'}>
+            {twitterText}
+            <p> Written by {twitterAuthor} </p>
+          </div>
           <button className="fluxbutton" onClick={handleClickButton}>
-            &darr; &uarr;
+            {' '}
+            &darr; &uarr;{' '}
           </button>
         </div>
       </div>

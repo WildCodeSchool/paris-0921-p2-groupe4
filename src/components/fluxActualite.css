@@ -3,13 +3,15 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 35px;
-  padding: 8px;
+  margin: 7vh;
+  padding: 1vh;
   border-style: solid;
   border-color: #8467da;
   border-width: medium;
   border-radius: 5px;
   text-align: justify;
+  background-color: #ffffff;
+  background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
 }
 
 .text {
@@ -21,7 +23,7 @@ p {
 }
 
 .lesstext {
-  height: 55px;
+  max-height: 15vh;
   overflow: hidden;
 }
 
@@ -34,12 +36,11 @@ p {
   background-color: white;
   color: #8467da;
   font-size: 120%;
-  font-style: bold;
   border-color: #8467da;
   border-style: solid;
   border-radius: 5px;
-  height: fit-content;
   width: 100%;
+  height: 5vh;
   position: relative;
 }
 
@@ -47,6 +48,15 @@ p {
   display: none;
 }
 .displayImg {
-  height: 100%;
-  width: 100%;
+  height: 65vh;
+  width: 65vw;
+  margin-bottom: 4vh;
 }
+
+/* .rightColumnDisplay {
+  display:flex;
+  height: 100%;
+  width: 45vh;
+  flex-direction: column;
+  align-items: flex-end;
+} */
