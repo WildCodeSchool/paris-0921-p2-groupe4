@@ -5,6 +5,7 @@
   flex-direction: column;
   margin: 7vh;
   padding: 1vh;
+  width: 90vw;
   border-style: solid;
   border-color: #8467da;
   border-width: medium;
@@ -14,7 +15,7 @@
   background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
 }
 .fluxbox {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -56,4 +57,3 @@ p {
   width: 65vw;
   margin-bottom: 4vh;
 }
-

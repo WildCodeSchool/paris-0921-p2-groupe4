@@ -7,7 +7,13 @@
   padding: 10px;
 }
 
-.Text  {
+.TextBox {
   display: flex;
-  align-items: space-around;
+  align-items: center;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-color: #8467da;
+  border-width: medium;
+  border-radius: 5px;
+  width: 90vw;
 }

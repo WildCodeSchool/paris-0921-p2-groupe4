@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import ContentBox from './ContentBox';
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
-
-import './Text.css';
 import ThemeButton from './ThemeButton';
 import NumberButton from './NumberButton';
+
+import './Text.css';
 
 export default function National() {
   const [theme, setTheme] = useState('NatGeo');
@@ -28,7 +28,7 @@ export default function National() {
 
   return (
     <>
-      <div className="Text">
+      <div className="TextBox">
         <p> National Geographic! </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />
         <NumberButton addTenMoreTweets={addTenMoreTweets} />
