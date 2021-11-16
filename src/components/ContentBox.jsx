@@ -4,10 +4,10 @@ import TweetRequest from './tenTweetRequest';
 
 import './contentBox.css';
 
-function ContentBox({ theme, tweetNumber }) {
+function ContentBox({ images, theme, tweetNumber }) {
   return (
     <div className="tweet-result">
-      <TweetRequest tweetNumber={tweetNumber} theme={theme} />
+      <TweetRequest images={images} tweetNumber={tweetNumber} theme={theme} />
     </div>
   );
 }

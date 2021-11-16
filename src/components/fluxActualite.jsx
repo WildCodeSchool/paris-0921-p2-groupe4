@@ -10,7 +10,7 @@ function FluxA({ twitterImg, twitterText, twitterAuthor }) {
   }
 
   return (
-    <div className="fluxbox">
+    <div className="fluxbox" onClick={handleClickButton} onKeyPress={handleClickButton} role="button" tabIndex={0}>
       <div className="flux">
         <div className={theButton ? 'displayImg' : 'noDisplayImg'}>
           <img src={twitterImg} alt="happynews" className="displayImg"></img>
@@ -20,10 +20,6 @@ function FluxA({ twitterImg, twitterText, twitterAuthor }) {
             {twitterText}
             <p> Written by {twitterAuthor} </p>
           </div>
-          <button className="fluxbutton" onClick={handleClickButton}>
-            {' '}
-            &darr; &uarr;{' '}
-          </button>
         </div>
       </div>
     </div>

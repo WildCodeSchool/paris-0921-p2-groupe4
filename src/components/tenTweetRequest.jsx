@@ -6,11 +6,12 @@ import keys from './keys';
 
 function TweetRequest(props) {
   const [tenTweets, setTenTweets] = useState([]);
-  let { tweetNumber, theme } = props;
+  let { tweetNumber, theme, images } = props;
+
   useEffect(() => {
     axios
       .get(
-        `https://cors-bypass.tkzprod.dev/api.twitter.com/2/tweets/search/recent?max_results=${tweetNumber}&tweet.fields=lang,attachments,text,geo&expansions=attachments.media_keys,author_id,geo.place_id&media.fields=preview_image_url,url,media_key&place.fields=country,geo&user.fields=username,name&query=from%3A${theme}%20has%3Aimages%20lang%3Aen`,
+        `https://cors-bypass.tkzprod.dev/api.twitter.com/2/tweets/search/recent?max_results=${tweetNumber}&tweet.fields=lang,attachments,text,geo&expansions=attachments.media_keys,author_id,geo.place_id&media.fields=preview_image_url,url,media_key&place.fields=country,geo&user.fields=username,name&query=from%3A${theme}${images}`,
         { headers: keys },
       )
       .then((response) => response.data)
@@ -25,7 +26,7 @@ function TweetRequest(props) {
         });
         setTenTweets(tweets);
       });
-  }, [theme, tweetNumber]);
+  }, [theme, tweetNumber, images]);
 
   return (
     <>
