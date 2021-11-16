@@ -1,5 +1,5 @@
 .accordion {
-  max-width: 900px;
+  max-width: 100%;
   margin: 0px auto 0;
   border-radius: 3px;
   background: #f1f1f1;
@@ -55,4 +55,94 @@
   padding: 22px 15px;
   pointer-events: none;
   line-height: 1.3;
+}
+
+/*****  FORM CSS   *****/
+
+.contactbutton {
+  border: 0px;
+  background-color: white;
+  color: #8467da;
+  font-size: 250%;
+  margin-right: 10px;
+}
+.contactbutton:hover {
+  font-weight: bold;
+}
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid#8467da;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+input:focus {
+  border: 5px solid #8467da;
+  background-color: #d0bbf8;
+}
+
+textarea:focus {
+  border: 5px solid #8467da;
+  background-color: #d0bbf8;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid#8467da;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  width: 78%;
+  margin-right: 0px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border-style: solid;
+  border-color: #8467da;
+  color: #8467da;
+  padding: 6px;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #d0bbf8;
+}
+
+.form {
+  padding: 20px;
+  border-style: solid;
+  border-color: #8467da;
+  color: #8467da;
+  font-weight: bold;
+}
+
+.notform {
+  display: none;
+  padding: 20px;
+  border-style: solid;
+  border-color: #8467da;
+  color: #8467da;
+  font-weight: bold;
 }

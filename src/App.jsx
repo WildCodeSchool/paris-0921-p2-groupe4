@@ -11,9 +11,19 @@ import Settings from './components/Settings';
 // import FluxActualite from './components/FluxActualite';
 import Apropos from './components/a-propos';
 import './App.css';
+// import Loader from './components/Loader.jsx';
 
 function App() {
+  // const [loader, setLoader] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoader(false);
+  //   }, 1000);
+  // }, []);
+
   return (
+    // loader ? (//   <Loader />// ) : (
     <div className="App">
       <Header />
       <Switch>

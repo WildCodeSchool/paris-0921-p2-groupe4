@@ -30,6 +30,14 @@ export default function Accordion() {
     setToggle2(!toggle2);
   };
 
+  ///   FORM   ////
+
+  const [theForm, setTheForm] = React.useState(false);
+
+  function handleClickForm() {
+    setTheForm(!theForm);
+  }
+
   return (
     <>
       <div className="accordion">
@@ -56,7 +64,27 @@ export default function Accordion() {
           style={{ height: toggle2 ? `${heightEl2}` : '0px' }}
           ref={refHeight2}
         >
-          <p aria-hidden={toggle2 ? 'true' : 'false'}>lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+          <div aria-hidden={toggle2 ? 'true' : 'false'} className={theForm ? 'form' : 'notform'}>
+            <form id="contact-form">
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" className="form-control" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="exampleInputEmail1">Email</label>
+                <input type="email" className="form-control" aria-describedby="emailHelp" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea className="form-control" rows="5"></textarea>
+              </div>
+              <div className="button">
+                <button className="btn" type="submit" onClick={handleClickForm}>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </>
