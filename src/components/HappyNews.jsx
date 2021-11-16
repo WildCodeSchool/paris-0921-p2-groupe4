@@ -1,18 +1,20 @@
 import React from 'react';
 
-import Content from './Content';
+import ContentBox from './ContentBox';
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './HappyNews.css';
 
 export default function HappyNews() {
+  const theme = 'Thom_astro';
+  const tweetNumber = '25';
   return (
     <>
       <div className="Text">
-        <p> Happy news </p>
+        <p> Happy News!</p>
       </div>
-      <Content />
+      <ContentBox theme={theme} tweetNumber={tweetNumber} />
       <div className="Swipe">
         <a href="/">
           <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>

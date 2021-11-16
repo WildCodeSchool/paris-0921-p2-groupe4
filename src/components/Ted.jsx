@@ -1,16 +1,18 @@
 import React from 'react';
 
+import ContentBox from './ContentBox';
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
-import Content from './Content.jsx';
 
 export default function Ted() {
+  const theme = 'NatGeo';
+  const tweetNumber = '25';
   return (
     <>
       <div className="Text">
-        <p> TED talks </p>
+        <p> TedTalks </p>
       </div>
-      <Content />
+      <ContentBox theme={theme} tweetNumber={tweetNumber} />
       <div className="Swipe">
         <a href="/National">
           <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>
