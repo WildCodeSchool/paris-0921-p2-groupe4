@@ -1,15 +1,15 @@
-.main-contact {
+/* .main-contact {
   height: 60%;
   width: 95%;
   border: 2px solid #8467da;
   border-radius: 10px;
   overflow: hidden;
-  /* display: flex;
+  display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
-}
+    align-items: center;
+ }
 
 .contact {
   height: 20%;
@@ -59,4 +59,4 @@
   height: 50%;
   border-radius: 10px;
   border: 1px solid #333;
-}
+} */

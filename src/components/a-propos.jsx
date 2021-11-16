@@ -1,7 +1,7 @@
 import React from 'react';
 import './a-propos.css';
 import Team from './team.jsx';
-// import Preferences from './preferences';
+import Preferences from './preferences';
 import AboutUs from './about-us';
 import Accordion from './Accordion.jsx';
 import ContactUs from './contact-us';
@@ -15,7 +15,7 @@ function Apropos() {
       <Team />
       <AboutUs />
       <Accordion />
-      {/* <Preferences /> */}
+      <Preferences />
       <ContactUs />
     </div>
   );
