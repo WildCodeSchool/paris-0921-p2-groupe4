@@ -39,6 +39,12 @@ p {
   background-color: #f0eafe;
 }
 
+.container-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .fluxbutton {
   margin-top: 10px;
   background-color: white;

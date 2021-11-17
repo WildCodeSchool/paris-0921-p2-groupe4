@@ -1,6 +1,6 @@
 import React from 'react';
-
-import FluxA from './fluxActualite';
+import './Content.css';
+import FluxA from './FluxActualite';
 
 function Content() {
   return (
