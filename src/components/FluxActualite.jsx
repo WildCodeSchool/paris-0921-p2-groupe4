@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './FluxActualite.css';
 
 function FluxA({ twitterImg, twitterText, twitterAuthor }) {
-  const [theButton, setButton] = React.useState(false);
+  const [theButton, setButton] = useState(false);
 
   function handleClickButton() {
     setButton(!theButton);
