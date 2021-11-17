@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './team-member.css';
+
 function TeamM(props) {
   return (
     <div className="team1">

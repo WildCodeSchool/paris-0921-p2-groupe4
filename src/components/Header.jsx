@@ -8,7 +8,7 @@ import settingIcon from '../pictures/Settings-icon.jpg';
 
 import './Header.css';
 
-export default function Header() {
+function Header() {
   return (
     <div className="Header">
       <a href="/">
@@ -20,3 +20,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default Header;
