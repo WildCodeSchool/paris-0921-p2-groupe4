@@ -9,6 +9,7 @@ import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
+import './Swipe.css';
 
 function Ted() {
   const [theme, setTheme] = useState('humansofny');
@@ -43,8 +44,9 @@ function Ted() {
 
   return (
     <div className="PageScreen">
+      <div className="TextBox"> Get inspired! </div>
       <div className="TextBox">
-        <p> You&apos;re viewing : &apos;{theme}&apos; </p>
+        <p> You&apos;re viewing: &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />
         <NumberButton addTenMoreTweets={addTenMoreTweets} />
         <ImageButton handleTweetImages={handleTweetImages} />

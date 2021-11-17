@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import FluxA from './FluxActualite';
+import FluxA from './fluxActualite';
 import keys from './keys';
 
 function TweetRequest(props) {

@@ -9,19 +9,17 @@ import './Header.css';
 
 function Header() {
   return (
-    <>
-      <div className="Header">
-        <Link to="/">
-          <img src={Logo} className="Logo" height="70" width="auto" alt="logo-nasato" />{' '}
-        </Link>
-        <Link to="/Favoris">
-          <img src={Save} className="save" height="30" alt="Save-nasato" />
-        </Link>
-        <Link to="/a-propos">
-          <img src={settingIcon} className="settings" height="30" alt="Save-nasato" />
-        </Link>
-      </div>
-    </>
+    <div className="Header">
+      <Link to="/">
+        <img src={Logo} className="Logo" height="70" width="auto" alt="logo-nasato" />{' '}
+      </Link>
+      <Link to="/Favoris">
+        <img src={Save} className="save" height="30" alt="Save-nasato" />
+      </Link>
+      <Link to="/a-propos">
+        <img src={settingIcon} className="settings" height="60" wdith="60" alt="settings-nasato" />
+      </Link>
+    </div>
   );
 }
 

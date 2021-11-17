@@ -1,11 +1,15 @@
 .Header {
   background-color: white;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1vh;
+  margin-top: 4px;
+}
+
+.Logo {
+  margin-top: 1rem;
 }
 
 .settings {
