@@ -1,9 +1,11 @@
 import React from 'react';
-import './a-propos.css';
+
 import ContactUs from './contact-us';
 import Team from './team.js';
 import Preferences from './preferences';
 import AboutUs from './about-us';
+
+import './a-propos.css';
 
 function Apropos() {
   return (

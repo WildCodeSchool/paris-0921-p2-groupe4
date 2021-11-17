@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import './contact-us.css';
 
 function ContactUs() {
-  const [theForm, setTheForm] = React.useState(false);
+  const [theForm, setTheForm] = useState(false);
 
   function handleClickForm() {
     setTheForm(!theForm);

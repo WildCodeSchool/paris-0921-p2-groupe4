@@ -11,7 +11,7 @@ import SwipeL from '../pictures/swipe-left.png';
 import './Text.css';
 import './HappyNews.css';
 
-export default function HappyNews() {
+function HappyNews() {
   const [theme, setTheme] = useState('Thom_astro');
   const [newTheme, setNewTheme] = useState('');
   const [tweetNumber, setTweetNumber] = useState(10);
@@ -62,3 +62,5 @@ export default function HappyNews() {
     </div>
   );
 }
+
+export default HappyNews;
