@@ -10,6 +10,7 @@ import './Text.css';
 import './Homepage.css';
 import Loader from './Loader';
 import gsap from 'gsap';
+import Header from './Header.jsx';
 
 function Pictures() {
   let timeline = gsap.timeline();
@@ -26,6 +27,7 @@ function Pictures() {
     <Loader timeline={timeline} />
   ) : (
     <>
+      <Header />
       <div className="Body">
         <div className="PageScreenHome">
           <div className="TextBox">

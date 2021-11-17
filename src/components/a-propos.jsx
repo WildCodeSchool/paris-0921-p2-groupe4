@@ -6,18 +6,22 @@ import Preferences from './preferences';
 import AboutUs from './about-us';
 
 import './a-propos.css';
+import Header from './Header.jsx';
 
 function Apropos() {
   return (
-    <div>
+    <>
+      <Header />
       <div>
-        <h2 className="title">About US</h2>
+        <div>
+          <h2 className="title">About US</h2>
+        </div>
+        <AboutUs />
+        <Team />
+        <Preferences />
+        <ContactUs />
       </div>
-      <AboutUs />
-      <Team />
-      <Preferences />
-      <ContactUs />
-    </div>
+    </>
   );
 }
 
