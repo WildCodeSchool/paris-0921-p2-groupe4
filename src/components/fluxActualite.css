@@ -24,6 +24,8 @@
 
 .text {
   height: 20%;
+  font-family: system-ui;
+  
 }
 p {
   margin-top: 2px;
@@ -34,6 +36,7 @@ p {
 .lesstext {
   max-height: 15vh;
   overflow: hidden;
+  font-family: system-ui;
 }
 
 .flux:hover {
