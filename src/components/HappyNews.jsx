@@ -9,7 +9,7 @@ import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
-import './HappyNews.css';
+import './Swipe.css';
 
 function HappyNews() {
   const [theme, setTheme] = useState('Thom_astro');
@@ -44,6 +44,7 @@ function HappyNews() {
 
   return (
     <div className="PageScreen">
+      <div className="TextBox"> Happy news </div>
       <div className="TextBox">
         <p> You&apos;re viewing : &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />

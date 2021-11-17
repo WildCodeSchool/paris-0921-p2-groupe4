@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Example from './assets/example.png';
 import TeamM from './team-member';
+import Example from './assets/example.png';
 
 import './team.css';
 

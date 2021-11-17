@@ -19,11 +19,11 @@
   background-color: white;
   border: 0.1em solid #8467da;
 }
-
 .FormDisplay {
-  background-color: #8467da;
+  background-color: #d0bbf8;
   color: white;
   height: 4vh;
   text-decoration: none;
   font-weight: 700;
+  border-color: #8467da;
 }
