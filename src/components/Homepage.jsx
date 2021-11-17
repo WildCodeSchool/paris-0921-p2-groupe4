@@ -13,7 +13,7 @@ function Pictures() {
   return (
     <>
       <div className="Body">
-        <div className="PageScreen">
+        <div className="PageScreenHome">
           <div className="TextBox">
             <div className="WelcomeText">
               <p> Welcome to Nasato. Your relaxation App. You can choose below what you want to see </p>
