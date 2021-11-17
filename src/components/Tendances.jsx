@@ -9,6 +9,7 @@ import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
+import './Swipe.css';
 
 function Tendances() {
   const [theme, setTheme] = useState('humansofny');
@@ -43,6 +44,7 @@ function Tendances() {
 
   return (
     <div className="PageScreen">
+      <div className="TextBox"> Trending </div>
       <div className="TextBox">
         <p> You&apos;re viewing : &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />

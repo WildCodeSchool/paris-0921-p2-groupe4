@@ -38,13 +38,13 @@ function Pictures() {
               <div className="Pictures">
                 <Link to="/Tendances" className="Color" style={{ textDecoration: 'none' }}>
                   <img className="Tendances" src={Tendances} alt="Tendances"></img>
-                  <p> Tendances </p>
+                  <p> Trending </p>
                 </Link>
               </div>
               <div className="Pictures">
                 <Link to="/TedTalks" className="Color" style={{ textDecoration: 'none' }}>
                   <img className="TED" src={TED} alt="TED"></img>
-                  <p> TED talks </p>
+                  <p> Get inspired! </p>
                 </Link>
               </div>
             </div>
