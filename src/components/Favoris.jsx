@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from './Header.jsx';
 
 function Favoris() {
-  return <p> Saved posts </p>;
+  return (
+    <>
+      <Header />
+      <p> Saved posts </p>
+    </>
+  );
 }
 
 export default Favoris;
