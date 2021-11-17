@@ -10,7 +10,7 @@ import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
 
-export default function Ted() {
+function Ted() {
   const [theme, setTheme] = useState('humansofny');
   const [newTheme, setNewTheme] = useState('');
   const [tweetNumber, setTweetNumber] = useState(10);
@@ -61,3 +61,5 @@ export default function Ted() {
     </div>
   );
 }
+
+export default Ted;

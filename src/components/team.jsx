@@ -1,7 +1,9 @@
 import React from 'react';
-import './team.css';
+
 import Example from './assets/example.png';
 import TeamM from './team-member';
+
+import './team.css';
 
 function Team() {
   return (

@@ -8,8 +8,7 @@ function ThemeButton({ handleNewTheme, handleThemeChange, newTheme }) {
       <form>
         <input className="FormDisplay" type="text" placeholder="Modify me" onChange={handleNewTheme} value={newTheme}></input>
         <button className="submitThemeButton" onClick={handleThemeChange}>
-          {' '}
-          Send{' '}
+          Send
         </button>
       </form>
     </div>

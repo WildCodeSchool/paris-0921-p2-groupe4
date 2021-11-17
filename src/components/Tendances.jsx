@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Text.css';
 
 import ContentBox from './ContentBox';
 import ThemeButton from './ThemeButton';
@@ -11,7 +10,7 @@ import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
 
-export default function Tendances() {
+function Tendances() {
   const [theme, setTheme] = useState('humansofny');
   const [newTheme, setNewTheme] = useState('');
   const [tweetNumber, setTweetNumber] = useState(10);
@@ -62,3 +61,5 @@ export default function Tendances() {
     </div>
   );
 }
+
+export default Tendances;

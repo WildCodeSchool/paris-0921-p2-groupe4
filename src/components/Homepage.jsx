@@ -9,7 +9,7 @@ import TED from '../pictures/TED.png';
 import './Text.css';
 import './Homepage.css';
 
-export default function Pictures() {
+function Pictures() {
   return (
     <>
       <div className="Body">
@@ -54,3 +54,5 @@ export default function Pictures() {
     </>
   );
 }
+
+export default Pictures;
