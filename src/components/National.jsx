@@ -9,6 +9,7 @@ import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
+import './Swipe.css';
 
 function National() {
   const [theme, setTheme] = useState('NatGeo');

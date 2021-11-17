@@ -9,7 +9,7 @@ import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
-import './HappyNews.css';
+import './Swipe.css';
 
 function HappyNews() {
   const [theme, setTheme] = useState('Thom_astro');
