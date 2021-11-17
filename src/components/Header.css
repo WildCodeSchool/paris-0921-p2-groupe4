@@ -9,12 +9,54 @@
 }
 
 .Logo {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .settings {
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-top: 0.5rem;
 }
 .save {
-  margin-right: 10px;
+  margin-left: 13rem;
+}
+
+@media screen and (min-width: 480px) {
+  .save {
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .save {
+    margin-left: 25rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .save {
+    margin-left: 30rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .save {
+    margin-left: 35rem;
+  }
+}
+@media screen and (min-width: 880px) {
+  .save {
+    margin-left: 40rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .save {
+    margin-left: 45rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .save {
+    margin-left: 50rem;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .save {
+    margin-left: 65rem;
+  }
 }

@@ -11,10 +11,10 @@ function Header() {
   return (
     <div className="Header">
       <Link to="/">
-        <img src={Logo} className="Logo" height="70" width="auto" alt="logo-nasato" />{' '}
+        <img src={Logo} className="Logo" height="50" width="50" alt="logo-nasato" />{' '}
       </Link>
       <Link to="/Favoris">
-        <img src={Save} className="save" height="30" alt="Save-nasato" />
+        <img src={Save} className="save" height="40" width="40" alt="Save-nasato" />
       </Link>
       <Link to="/a-propos">
         <img src={settingIcon} className="settings" height="60" wdith="60" alt="settings-nasato" />
