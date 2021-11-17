@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Happy from '../pictures/Happynews.png';
 import National from '../pictures/National.png';
@@ -8,9 +8,23 @@ import TED from '../pictures/TED.png';
 import './Pictures.css';
 import './Text.css';
 import './Homepage.css';
+import Loader from './Loader';
+import gsap from 'gsap';
 
 export default function Pictures() {
-  return (
+  let timeline = gsap.timeline();
+
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 5000);
+  }, []);
+
+  return loader ? (
+    <Loader timeline={timeline} />
+  ) : (
     <>
       <div className="Body">
         {

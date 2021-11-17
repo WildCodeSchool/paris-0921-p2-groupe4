@@ -17,19 +17,19 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-} */
-/* .column2 {
+} 
+.column2 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 } */
 
-/* @media (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .column1 {
     flex-direction: column;
   }
   .column2 {
     flex-direction: column;
   }
-} */
+}

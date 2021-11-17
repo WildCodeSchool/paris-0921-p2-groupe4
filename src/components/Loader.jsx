@@ -6,9 +6,7 @@ import { Power2 } from 'gsap';
 function Loader({ timeline }) {
   let welcome = useRef(null);
   let to = useRef(null);
-  let your = useRef(null);
-  let relaxation = useRef(null);
-  let app = useRef(null);
+  let nasato = useRef(null);
 
   useEffect(() => {
     timeline.from(welcome, {
@@ -29,25 +27,7 @@ function Loader({ timeline }) {
     });
   });
   useEffect(() => {
-    timeline.from(your, {
-      scale: 5,
-      duration: 0.6,
-      opacity: 0,
-      y: 100,
-      ease: Power2.easeOut,
-    });
-  });
-  useEffect(() => {
-    timeline.from(relaxation, {
-      scale: 5,
-      duration: 0.6,
-      opacity: 0,
-      y: 100,
-      ease: Power2.easeOut,
-    });
-  });
-  useEffect(() => {
-    timeline.from(app, {
+    timeline.from(nasato, {
       scale: 5,
       duration: 0.6,
       opacity: 0,
@@ -81,21 +61,17 @@ function Loader({ timeline }) {
         </div>
       </div>
       <div className="sentence">
-        <span ref={(el) => (welcome = el)} className="welcome">
-          Welcome
-        </span>
-        <span ref={(el) => (to = el)} className="to">
-          to
-        </span>
-        <span ref={(el) => (your = el)} className="your">
-          your
-        </span>
-        <span ref={(el) => (relaxation = el)} className="relaxation">
-          relaxation
-        </span>
-        <span ref={(el) => (app = el)} className="app">
-          App
-        </span>
+        <div className="container-span1">
+          <span ref={(el) => (welcome = el)} className="welcome">
+            Welcome
+          </span>
+          <span ref={(el) => (to = el)} className="to">
+            to
+          </span>
+          <span ref={(el) => (nasato = el)} className="nasato">
+            NASATO
+          </span>
+        </div>
       </div>
     </main>
   );
