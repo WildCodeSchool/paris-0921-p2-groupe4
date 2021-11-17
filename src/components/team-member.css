@@ -1,11 +1,9 @@
 .team1 {
   margin: 5px;
-  width: 40%;
 }
 .teammember {
   display: block;
   width: 100%;
-  height: 100%;
   border-radius: 50%;
   border-style: solid;
   border-color: #8467da;
