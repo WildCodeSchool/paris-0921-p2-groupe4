@@ -44,6 +44,7 @@ function Tendances() {
 
   return (
     <div className="PageScreen">
+      <div className="TextBox"> Trending </div>
       <div className="TextBox">
         <p> You&apos;re viewing : &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />

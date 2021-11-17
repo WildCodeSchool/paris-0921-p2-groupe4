@@ -44,6 +44,7 @@ function National() {
 
   return (
     <div className="PageScreen">
+      <div className="TextBox"> Nature </div>
       <div className="TextBox">
         <p> You&apos;re viewing : &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />

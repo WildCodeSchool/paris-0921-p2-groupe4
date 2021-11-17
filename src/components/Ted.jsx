@@ -44,6 +44,7 @@ function Ted() {
 
   return (
     <div className="PageScreen">
+      <div className="TextBox"> Get inspired! </div>
       <div className="TextBox">
         <p> You&apos;re viewing : &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />
