@@ -27,11 +27,12 @@
 }
 
 .PageScreen {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(257deg,#ffffff,#8467da);
+  background: linear-gradient(257deg, #ffffff, #8467da);
   background-size: 120% 120%;
   animation: gradient-animation 14s ease infinite;
 }
