@@ -5,7 +5,7 @@ import Save from '../pictures/heart.png';
 
 import './Header.css';
 
-export default function Header() {
+function Header() {
   return (
     <div className="Header">
       <a href="/">
@@ -17,3 +17,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default Header;

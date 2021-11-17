@@ -1,0 +1,93 @@
+.Body {
+  background-color: #ffffff;
+  display: block;
+  background-position: bottom;
+  background-image: url('../pictures/waves.svg');
+  background-repeat: repeat-x;
+}
+
+.Pictures img:hover {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 30%;
+  filter: drop-shadow(15px 5px 4px #8467da);
+  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.Container-pictures {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+.ContainerOne {
+  margin-right: 5%;
+}
+
+.Pictures {
+  text-align: center;
+  font-family: monospace;
+  font-size: 160%;
+  font-weight: bold;
+}
+
+.Color {
+  color: #8467da;
+}
+
+@media (min-width: 1100px) {
+  .Body {
+    background-image: url('../pictures/wavesdesktop.svg');
+    /* background-image: url('../pictures/flower.jpg');
+    background-size: cover;*/
+  }
+
+  .Container-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90vh;
+    align-items: flex-start;
+    padding-top: 9rem;
+  }
+
+  .Pictures img {
+    width: 250px;
+    height: 250px;
+    border-radius: 30%;
+  }
+
+  .ContainerOne {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0%;
+  }
+
+  .ContainerTwo {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,29 @@
+.submitThemeButton {
+  display: inline-block;
+  height: 5vh;
+  min-width: 5vw;
+  padding: 0.3em;
+  border: 0.1em solid white;
+  margin: 0 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #8467da;
+}
+.submitThemeButton:hover {
+  color: #8467da;
+  background-color: white;
+  border: 0.1em solid #8467da;
+}
+
+.FormDisplay {
+  background-color: #8467da;
+  color: white;
+  height: 4vh;
+  text-decoration: none;
+  font-weight: 700;
+}

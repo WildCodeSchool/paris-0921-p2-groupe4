@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Favoris() {
+function Favoris() {
   return <p> Saved posts </p>;
 }
+
+export default Favoris;
