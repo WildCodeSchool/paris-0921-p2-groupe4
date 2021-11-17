@@ -46,7 +46,7 @@ function HappyNews() {
     <div className="PageScreen">
       <div className="TextBox"> Happy news </div>
       <div className="TextBox">
-        <p> You&apos;re viewing : &apos;{theme}&apos; </p>
+        <p> You&apos;re viewing: &apos;{theme}&apos; </p>
         <ThemeButton handleNewTheme={handleNewTheme} handleThemeChange={handleThemeChange} newTheme={newTheme} />
         <NumberButton addTenMoreTweets={addTenMoreTweets} />
         <ImageButton handleTweetImages={handleTweetImages} />
