@@ -196,14 +196,12 @@ main {
     flex-wrap: wrap;
     display: flex;
     font-family: 'PT mono', sans-serif;
-    /* background: cadetblue; */
   }
   .container-span1 {
     height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: burlywood; */
   }
   .welcome {
     font-size: 30px;

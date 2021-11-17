@@ -40,7 +40,6 @@ body.active-modal {
 }
 
 .message-content {
-  /* background-color: cadetblue; */
   width: 100%;
   height: 10vh;
   display: flex;
@@ -52,14 +51,12 @@ body.active-modal {
 }
 
 .close-content {
-  /* background-color: rgb(90, 71, 57); */
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .close-modal {
-  /* position: absolute; */
   top: 10px;
   right: 10px;
   padding: 1px 3px;

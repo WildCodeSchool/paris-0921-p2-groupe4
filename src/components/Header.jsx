@@ -1,9 +1,6 @@
 import React from 'react';
 
 import Logo from '../pictures/logo.png';
-// import Save from '../pictures/heart.png';
-
-// import aboutUs from '../pictures/aboutUs.png';
 import settingIcon from '../pictures/Settings-icon.jpg';
 
 import './Header.css';
