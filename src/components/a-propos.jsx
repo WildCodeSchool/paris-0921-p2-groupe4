@@ -13,8 +13,8 @@ function Apropos() {
       <div>
         <h2 className="title">About US</h2>
       </div>
-      <Team />
       <AboutUs />
+      <Team />
       <Preferences />
       <ContactUs />
     </div>

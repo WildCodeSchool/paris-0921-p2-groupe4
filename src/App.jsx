@@ -1,5 +1,6 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Homepage from './components/Homepage';
 import HappyNews from './components/HappyNews';
@@ -21,7 +22,7 @@ function App() {
         <Route path="/Tendances" component={Tendances} />
         <Route path="/TedTalks" component={Ted} />
         <Route path="/Favoris" component={Favoris} />
-        <Route path="/Apropos" component={Apropos} />
+        <Route path="/a-propos" component={Apropos} />
       </Switch>
     </div>
   );
