@@ -5,7 +5,7 @@
   padding: 0.3em;
   border: 0.1em solid white;
   margin: 0 0.3em 0;
-  border-radius: 0.12em;
+  border-radius: 5px;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: 700;
@@ -20,10 +20,10 @@
   border: 0.1em solid #8467da;
 }
 .FormDisplay {
-  background-color: #d0bbf8;
   color: white;
   height: 4vh;
   text-decoration: none;
   font-weight: 700;
+  border-radius: 5px;
   border-color: #8467da;
 }

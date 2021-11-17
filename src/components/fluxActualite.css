@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 7vh;
+  margin: 4vh;
   padding: 1vh;
   width: 90vw;
   border-style: solid;
@@ -25,7 +25,6 @@
 .text {
   height: 20%;
   font-family: system-ui;
-  
 }
 p {
   margin-top: 2px;
