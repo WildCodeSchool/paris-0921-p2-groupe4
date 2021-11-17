@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ContactUs from './contact-us';
-import Team from './team.js';
+import Team from './team';
 import Preferences from './preferences';
 import AboutUs from './about-us';
 

@@ -1,0 +1,223 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 60px;
+  height: 60px;
+  perspective: 1000px;
+  margin: 150px auto 0;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: spin 8s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 300px;
+}
+
+.top {
+  border: 1px solid rgb(231, 227, 227);
+  transform: rotateX(90deg) translateZ(100px);
+  animation: balanceTop 1s ease-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bottom {
+  border: 1px solid rgb(231, 227, 227);
+  transform: rotateX(-90deg) translateZ(100px);
+  animation: balanceBottom 1.5s ease-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.right {
+  border: 1px solid rgb(231, 227, 227);
+  transform: rotateY(90deg) translateZ(100px);
+  animation: balanceRight 2s ease-in forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.left {
+  border: 1px solid rgb(231, 227, 227);
+  transform: rotateY(-90deg) translateZ(100px);
+  animation: balanceLeft 2.5s ease-in forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.front {
+  border: 1px solid rgb(231, 227, 227);
+  transform: rotateX(0deg) translateZ(100px);
+  animation: balanceFront 3s ease-in forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back {
+  border: 1px solid rgb(231, 227, 227);
+  transform: rotateX(-180deg) translateZ(100px);
+  animation: balanceBack 3.5s ease-in forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes balanceRight {
+  0% {
+    transform: rotateY(90deg) translateZ(1000px);
+  }
+  100% {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+}
+
+@keyframes balanceLeft {
+  0% {
+    transform: rotateY(-90deg) translateZ(1000px);
+  }
+  100% {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+}
+
+@keyframes balanceTop {
+  0% {
+    transform: rotateX(90deg) translateZ(1000px);
+  }
+  100% {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+}
+
+@keyframes balanceBottom {
+  0% {
+    transform: rotateX(-90deg) translateZ(1000px);
+  }
+  100% {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+}
+
+@keyframes balanceFront {
+  0% {
+    transform: rotateX(0deg) translateZ(800px);
+  }
+  100% {
+    transform: rotateX(0deg) translateZ(100px);
+  }
+}
+
+@keyframes balanceBack {
+  0% {
+    transform: rotateX(-180deg) translateZ(800px);
+  }
+  100% {
+    transform: rotateX(-180deg) translateZ(100px);
+  }
+}
+
+.sentence {
+  height: 30%;
+  margin-top: 10rem;
+  letter-spacing: 3px;
+  font-family: 'PT mono', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.welcome {
+  font-size: 50px;
+  color: #8467da;
+  font-weight: 600;
+}
+.to {
+  font-size: 50px;
+  margin-left: 1rem;
+  color: #8467da;
+  font-weight: 600;
+}
+.nasato {
+  font-size: 50px;
+  margin-left: 1rem;
+  color: #8467da;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 680px) {
+  .sentence {
+    margin-top: 11rem;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: 'PT mono', sans-serif;
+  }
+  .container-span1 {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome {
+    font-size: 30px;
+    color: #8467da;
+    font-weight: 600;
+  }
+  .to {
+    font-size: 30px;
+    margin-left: 0.5rem;
+    color: #8467da;
+    font-weight: 600;
+  }
+  .nasato {
+    font-size: 30px;
+    margin-left: 0.5rem;
+    color: #8467da;
+    font-weight: 800;
+  }
+}

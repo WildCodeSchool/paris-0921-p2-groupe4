@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Logo from '../pictures/logo.png';
+// import settingIcon from '../pictures/Settings-icon.jpg';
 import Save from '../pictures/heart.png';
 
 import './Header.css';
@@ -8,12 +10,12 @@ import './Header.css';
 function Header() {
   return (
     <div className="Header">
-      <a href="/">
+      <Link to="/">
         <img src={Logo} className="Logo" height="70" width="auto" alt="logo-nasato" />{' '}
-      </a>
-      <a href="/Favoris">
+      </Link>
+      <Link to="/Favoris">
         <img src={Save} className="Save" height="30" alt="Save-nasato" />
-      </a>
+      </Link>
     </div>
   );
 }

@@ -8,7 +8,6 @@ import National from './components/National';
 import Tendances from './components/Tendances';
 import Ted from './components/Ted';
 import Favoris from './components/Favoris';
-
 import './App.css';
 
 function App() {
