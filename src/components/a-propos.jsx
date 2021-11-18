@@ -11,10 +11,8 @@ function Apropos() {
   return (
     <>
       <Header />
-      <div>
-        <div>
-          <h2 className="title">About US</h2>
-        </div>
+      <div className="PageScreen">
+        <div className="TextBox"> About US </div>
         <AboutUs />
         <Team />
         <ContactUs />

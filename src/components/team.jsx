@@ -1,20 +1,23 @@
 import React from 'react';
 
 import TeamM from './team-member';
-import Example from './assets/example.png';
 
 import './team.css';
+import elisa from './assets/Elisa.jpg';
+import juan from './assets/JuanCarlos.png';
+import thomas from './assets/Thomas.jpg';
+import yass from './assets/Yassine.jpg';
 
 function Team() {
   return (
     <div className="team">
       <div className="column1">
-        <TeamM name="Maria Elisa Cruz" pic={Example} />
-        <TeamM name="Yassine Boulakhrif" pic={Example} />
+        <TeamM name="Maria Elisa Cruz" pic={elisa} />
+        <TeamM name="Yassine Boulakhrif" pic={yass} />
       </div>
       <div className="column2">
-        <TeamM name="Thomas Giolito " pic={Example} />
-        <TeamM name="Juan Carlos Cobas" pic={Example} />
+        <TeamM name="Thomas Giolito " pic={thomas} />
+        <TeamM name="Juan Carlos Cobas" pic={juan} />
       </div>
     </div>
   );
