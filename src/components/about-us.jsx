@@ -6,10 +6,9 @@ function AboutUs() {
   return (
     <div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.
+        With so much going on in the world around us, it can be tempting to give in to endless scrolling on social media. However, checking every
+        notification and reading every headline can have a negative effect on our mental health. Allow yourself to take a break from social media and
+        the news without being diconected from the world and the things you care about using Nasato.
       </p>
     </div>
   );
