@@ -5,9 +5,10 @@ import Homepage from './components/Homepage';
 import HappyNews from './components/HappyNews';
 import National from './components/National';
 import Tendances from './components/Tendances';
-import Ted from './components/Ted';
+import TedTalk from './components/ted-talk';
 import Favoris from './components/Favoris';
 import Apropos from './components/a-propos';
+
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/HappyNews" component={HappyNews} />
         <Route path="/National" component={National} />
         <Route path="/Tendances" component={Tendances} />
-        <Route path="/TedTalks" component={Ted} />
+        <Route path="/TedTalks" component={TedTalk} />
         <Route path="/Favoris" component={Favoris} />
         <Route path="/a-propos" component={Apropos} />
       </Switch>
