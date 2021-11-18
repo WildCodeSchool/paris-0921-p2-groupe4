@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1300px) {
   .column1 {
     flex-direction: column;
   }
