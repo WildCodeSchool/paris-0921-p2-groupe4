@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+
+import Loader from './Loader';
+import Header from './Header.jsx';
 
 import Happy from '../pictures/Happynews.png';
 import National from '../pictures/National.png';
@@ -8,9 +12,6 @@ import TED from '../pictures/TED.png';
 
 import './Text.css';
 import './Homepage.css';
-import Loader from './Loader';
-import gsap from 'gsap';
-import Header from './Header.jsx';
 
 function Pictures() {
   let timeline = gsap.timeline();

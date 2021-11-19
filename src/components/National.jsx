@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import ContentBox from './ContentBox';
 import ThemeButton from './ThemeButton';
 import NumberButton from './NumberButton';
 import ImageButton from './ImageButton';
+import Header from './Header.jsx';
 
 import SwipeR from '../pictures/swipe-right.png';
 import SwipeL from '../pictures/swipe-left.png';
 
 import './Text.css';
 import './Swipe.css';
-import Header from './Header.jsx';
 
 function National() {
   const [theme, setTheme] = useState('NatGeo');
@@ -56,12 +57,12 @@ function National() {
         </div>
         <ContentBox images={images} theme={theme} tweetNumber={tweetNumber} />
         <div className="Swipe">
-          <a href="/Tendances">
+          <Link to="/Tendances">
             <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>
-          </a>
-          <a href="/TedTalks">
+          </Link>
+          <Link to="/TedTalks">
             <img className="Swipe-right" src={SwipeR} alt="Swipe-right"></img>
-          </a>
+          </Link>
         </div>
       </div>
     </>
