@@ -30,7 +30,7 @@ function ContactUs() {
             <label htmlFor="message">Message</label>
             <textarea className="form-control" rows="5"></textarea>
           </div>
-          <div className="button">
+          <div className="buttonSubmit">
             <button className="btn" type="submit">
               Submit
             </button>

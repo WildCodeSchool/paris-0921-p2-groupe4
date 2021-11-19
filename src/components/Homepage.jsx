@@ -32,7 +32,7 @@ function Pictures() {
         <div className="PageScreenHome">
           <div className="TextBox">
             <div className="WelcomeText">
-              <p> Welcome to Nasato. Your relaxation App. You can choose below what you want to see </p>
+              <p>“Sometimes the most important thing in a whole day is the rest we take between two deep breaths.” – Etty Hillesum</p>
             </div>
           </div>
           <div className="Container-pictures">
@@ -60,7 +60,7 @@ function Pictures() {
               <div className="Pictures">
                 <Link to="/TedTalks" className="Color" style={{ textDecoration: 'none' }}>
                   <img className="TED" src={TED} alt="TED"></img>
-                  <p> Get inspired! </p>
+                  <p> Stress Management </p>
                 </Link>
               </div>
             </div>

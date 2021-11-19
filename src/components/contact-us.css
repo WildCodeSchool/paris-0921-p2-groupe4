@@ -22,7 +22,6 @@ h3 {
 }
 .contactbutton {
   border: 0px;
-  background-color: white;
   color: #8467da;
   font-size: 250%;
   margin-right: 10px;
@@ -60,7 +59,7 @@ textarea {
   outline: none;
 }
 
-.button {
+.buttonSubmit {
   margin-top: 10px;
   display: flex;
   justify-content: center;
