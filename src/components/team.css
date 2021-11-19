@@ -6,9 +6,7 @@
   align-items: center;
   text-align: center;
 }
-.team:hover {
-  background-color: #d0bbf8;
-}
+
 .column1 {
   display: flex;
   justify-content: center;
