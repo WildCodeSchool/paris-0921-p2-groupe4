@@ -4,10 +4,9 @@ body.active-modal {
 
 .btn-modal {
   padding: 3px 4px;
-  display: block;
-  margin: 100px auto 0;
-  font-size: 11spx;
+  font-size: 13px;
   border-radius: 10px;
+  margin-left: 89%;
 }
 
 .modal,
@@ -30,9 +29,9 @@ body.active-modal {
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
-  background: #f1f1f1;
+  background: #cc9cc6;
   padding: 14px 28px;
-  border-radius: 3px;
+  border-radius: 20px;
   max-width: 600px;
   min-width: 300px;
   display: flex;
@@ -48,6 +47,7 @@ body.active-modal {
 }
 .message-content > p {
   font-size: 20px;
+  color: rgb(26, 29, 32);
 }
 
 .close-content {
@@ -61,4 +61,5 @@ body.active-modal {
   right: 10px;
   padding: 1px 3px;
   border-radius: 10px;
+  background: rgb(231, 219, 231);
 }
