@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+
+import Loader from './Loader';
+import Header from './Header.jsx';
 
 import Happy from '../pictures/Happynews.png';
 import National from '../pictures/National.png';
@@ -10,13 +14,26 @@ import './Text.css';
 import './Homepage.css';
 
 function Pictures() {
-  return (
+  let timeline = gsap.timeline();
+
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false);
+    }, 5000);
+  }, []);
+
+  return loader ? (
+    <Loader timeline={timeline} />
+  ) : (
     <>
+      <Header />
       <div className="Body">
-        <div className="PageScreen">
+        <div className="PageScreenHome">
           <div className="TextBox">
             <div className="WelcomeText">
-              <p> Welcome to Nasato. Your relaxation App. You can choose below what you want to see </p>
+              <p>“Sometimes the most important thing in a whole day is the rest we take between two deep breaths.” – Etty Hillesum</p>
             </div>
           </div>
           <div className="Container-pictures">
@@ -38,13 +55,13 @@ function Pictures() {
               <div className="Pictures">
                 <Link to="/Tendances" className="Color" style={{ textDecoration: 'none' }}>
                   <img className="Tendances" src={Tendances} alt="Tendances"></img>
-                  <p> Tendances </p>
+                  <p> Trending </p>
                 </Link>
               </div>
               <div className="Pictures">
                 <Link to="/TedTalks" className="Color" style={{ textDecoration: 'none' }}>
                   <img className="TED" src={TED} alt="TED"></img>
-                  <p> TED talks </p>
+                  <p> Stress Management </p>
                 </Link>
               </div>
             </div>

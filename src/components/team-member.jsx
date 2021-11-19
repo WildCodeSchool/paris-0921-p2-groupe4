@@ -6,7 +6,9 @@ function TeamM(props) {
   return (
     <div className="team1">
       <img className="teammember" src={props.pic} alt="" />
-      <p className="teamname">{props.name}</p>
+      <div className="overlay">
+        <div className="teamname">{props.name}</div>
+      </div>
     </div>
   );
 }

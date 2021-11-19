@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin: 7vh;
+  margin: 4vh;
   padding: 1vh;
   width: 90vw;
   border-style: solid;
@@ -23,20 +23,22 @@
 }
 
 .text {
-  height: auto;
+  font-family: system-ui;
 }
 p {
   margin-top: 2px;
   margin-bottom: 2px;
+  text-align: center;
 }
 
 .lesstext {
   max-height: 15vh;
   overflow: hidden;
+  font-family: system-ui;
 }
 
 .flux:hover {
-  background-color: #d0bbf8;
+  background-color: #f0eafe;
 }
 
 .fluxbutton {
@@ -56,7 +58,13 @@ p {
   display: none;
 }
 .displayImg {
-  height: 65vh;
-  width: 65vw;
-  margin-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+.imageSet {
+  max-width: 90%;
+  max-height: 90%;
 }

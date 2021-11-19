@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+
+import Modal from './Modal';
+import emailjs from 'emailjs-com';
 
 import './contact-us.css';
 
@@ -8,6 +11,22 @@ function ContactUs() {
   function handleClickForm() {
     setTheForm(!theForm);
   }
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_5qz83vl', 'template_g3atcas', e.target, 'user_guJnEbcn9vb4gvxp42Rw9').then(
+      (result) => {
+        return result.text;
+      },
+      (error) => {
+        return error.text;
+      },
+    );
+  };
+
   return (
     <div>
       <div className="contactus">
@@ -17,7 +36,7 @@ function ContactUs() {
         </button>
       </div>
       <div className={theForm ? 'form' : 'notform'}>
-        <form id="contact-form">
+        <form id="contact-form" ref={form} onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input type="text" className="form-control" />
@@ -30,11 +49,7 @@ function ContactUs() {
             <label htmlFor="message">Message</label>
             <textarea className="form-control" rows="5"></textarea>
           </div>
-          <div className="button">
-            <button className="btn" type="submit">
-              Submit
-            </button>
-          </div>
+          <Modal />
         </form>
       </div>
     </div>

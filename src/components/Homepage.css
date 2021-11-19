@@ -6,6 +6,13 @@
   background-repeat: repeat-x;
 }
 
+.PageScreenHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .Pictures img:hover {
   width: 15rem;
   height: 15rem;
@@ -61,8 +68,6 @@
 @media (min-width: 1100px) {
   .Body {
     background-image: url('../pictures/wavesdesktop.svg');
-    /* background-image: url('../pictures/flower.jpg');
-    background-size: cover;*/
   }
 
   .Container-pictures {

@@ -1,23 +1,23 @@
 import React from 'react';
 
 import ContactUs from './contact-us';
-import Team from './team.js';
-import Preferences from './preferences';
+import Team from './team';
 import AboutUs from './about-us';
+import Header from './Header.jsx';
 
 import './a-propos.css';
 
 function Apropos() {
   return (
-    <div>
-      <div>
-        <h2 className="title">About US</h2>
+    <>
+      <Header />
+      <div className="PageScreen">
+        <div className="TextBox"> About US </div>
+        <AboutUs />
+        <Team />
+        <ContactUs />
       </div>
-      <AboutUs />
-      <Team />
-      <Preferences />
-      <ContactUs />
-    </div>
+    </>
   );
 }
 

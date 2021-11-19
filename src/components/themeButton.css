@@ -1,11 +1,11 @@
 .submitThemeButton {
   display: inline-block;
-  height: 5vh;
+  height: 4.1vh;
   min-width: 5vw;
   padding: 0.3em;
   border: 0.1em solid white;
   margin: 0 0.3em 0;
-  border-radius: 0.12em;
+  border-radius: 5px;
   box-sizing: border-box;
   text-decoration: none;
   font-weight: 700;
@@ -19,11 +19,11 @@
   background-color: white;
   border: 0.1em solid #8467da;
 }
-
 .FormDisplay {
-  background-color: #8467da;
   color: white;
   height: 4vh;
   text-decoration: none;
   font-weight: 700;
+  border-radius: 5px;
+  border-color: #8467da;
 }

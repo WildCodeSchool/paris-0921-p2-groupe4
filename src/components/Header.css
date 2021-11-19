@@ -1,12 +1,66 @@
 .Header {
-  background-color: #f0eafe;
-  height: 10vh;
+  background-color: white;
+  height: 8vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4px;
 }
 
-.Save {
-  margin-right: 10px;
+.Logo {
+  margin-top: 0.5rem;
+  width: 70px;
+  height: 70px;
+  margin-left: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.settings {
+  margin-right: 5px;
+  margin-top: 0.5rem;
+}
+.save {
+  margin-left: 13rem;
+}
+
+@media screen and (min-width: 480px) {
+  .save {
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 580px) {
+  .save {
+    margin-left: 25rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .save {
+    margin-left: 30rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .save {
+    margin-left: 35rem;
+  }
+}
+@media screen and (min-width: 880px) {
+  .save {
+    margin-left: 40rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .save {
+    margin-left: 45rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .save {
+    margin-left: 50rem;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .save {
+    margin-left: 65rem;
+  }
 }
