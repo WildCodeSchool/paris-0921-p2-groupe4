@@ -2,11 +2,12 @@ import React from 'react';
 
 import TeamM from './team-member';
 
-import './team.css';
 import elisa from './assets/Elisa.jpg';
 import juan from './assets/JuanCarlos.png';
 import thomas from './assets/Thomas.jpg';
 import yass from './assets/Yassine.jpg';
+
+import './team.css';
 
 function Team() {
   return (

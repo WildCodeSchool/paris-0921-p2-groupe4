@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import './Loader.css';
-import logo from '../pictures/logo.png';
 import { Power2 } from 'gsap';
+
+import logo from '../pictures/logo.png';
+
+import './Loader.css';
 
 function Loader({ timeline }) {
   let welcome = useRef(null);

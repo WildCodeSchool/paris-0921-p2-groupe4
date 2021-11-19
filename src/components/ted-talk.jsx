@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import DisplayVideo from './display-video';
 import Banner from './banner';
 import Header from './Header';
 
+import SwipeR from '../pictures/swipe-right.png';
+import SwipeL from '../pictures/swipe-left.png';
+
 import './ted-talk.css';
+import './Text.css';
+import './Swipe.css';
 
 const sampleVideo = 'P96mwXALxzE';
 
@@ -43,6 +49,14 @@ function TedTalk() {
           <button className="button" type="button" onClick={getVideo}>
             Boost me more!
           </button>
+        </div>
+        <div className="Swipe">
+          <Link to="/National">
+            <img className="Swipe-left" src={SwipeL} alt="Swipe-left"></img>
+          </Link>
+          <Link to="/">
+            <img className="Swipe-right" src={SwipeR} alt="Swipe-right"></img>
+          </Link>
         </div>
       </div>
     </div>

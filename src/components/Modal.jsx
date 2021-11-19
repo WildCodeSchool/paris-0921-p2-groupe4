@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './Modal.css';
+
 import verifieIcon from '../pictures/verifie.png';
 
-export default function Modal() {
+import './Modal.css';
+
+function Modal() {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -40,3 +42,5 @@ export default function Modal() {
     </>
   );
 }
+
+export default Modal;
