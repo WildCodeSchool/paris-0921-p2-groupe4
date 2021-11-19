@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
 
-import './contact-us.css';
 import Modal from './Modal';
 import emailjs from 'emailjs-com';
+
+import './contact-us.css';
 
 function ContactUs() {
   const [theForm, setTheForm] = useState(false);

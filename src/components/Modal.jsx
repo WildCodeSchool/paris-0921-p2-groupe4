@@ -20,7 +20,7 @@ function Modal() {
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
-        ENVOYER
+        SUBMIT
       </button>
 
       {modal && (
@@ -29,12 +29,12 @@ function Modal() {
           <div className="modal-content">
             <div className="close-content">
               <button className="close-modal" onClick={toggleModal}>
-                FERMER
+                CLOSE
               </button>
             </div>
             <div className="message-content">
               <img src={verifieIcon} height="25px" width="25px" alt="verif" />
-              <p>Mail envoyé</p>
+              <p>Mail sent!</p>
             </div>
           </div>
         </div>
