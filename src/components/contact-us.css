@@ -25,6 +25,10 @@ h3 {
   color: #8467da;
   font-size: 250%;
   margin-right: 10px;
+  border: #8467da;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: #d0bbf8;
 }
 .contactbutton:hover {
   font-weight: bold;
